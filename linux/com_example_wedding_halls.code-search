@@ -1,0 +1,38 @@
+# Query: com.example.wedding_halls
+# ContextLines: 1
+
+7 results - 7 files
+
+android\app\build.gradle:
+  46          // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+  47:         applicationId "com.amgad.wedding_halls"
+  48          // You can update the following values to match your application needs.
+
+android\app\google-services.json:
+  11          "android_client_info": {
+  12:           "package_name": "com.amgad.wedding_halls"
+  13          }
+
+android\app\src\debug\AndroidManifest.xml:
+  1  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  2:     package="com.amgad.wedding_halls">
+  3      <!-- The INTERNET permission is required for development. Specifically,
+
+android\app\src\main\AndroidManifest.xml:
+  1  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  2:     package="com.amgad.wedding_halls">
+  3  
+
+android\app\src\main\kotlin\com\example\wedding_halls\MainActivity.kt:
+  1: package com.amgad.wedding_halls
+  2  
+
+android\app\src\profile\AndroidManifest.xml:
+  1  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  2:     package="com.amgad.wedding_halls">
+  3      <!-- The INTERNET permission is required for development. Specifically,
+
+linux\CMakeLists.txt:
+   9  # https://wiki.gnome.org/HowDoI/ChooseApplicationID
+  10: set(APPLICATION_ID "com.amgad.wedding_halls")
+  11  

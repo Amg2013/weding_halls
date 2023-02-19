@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650370662814",
+    "project_id": "wedding-halls-ddca2",
+    "storage_bucket": "wedding-halls-ddca2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650370662814:android:55e5d98058fa4ad2c1d68f",
+        "android_client_info": {
+          "package_name": "com.amg.wedding_halls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650370662814-a87cee32ku477ashqq1668rgtkecg9mn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1bfOQZZdFsDDieEcZf4JIyfp4wzTzwkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650370662814-a87cee32ku477ashqq1668rgtkecg9mn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
