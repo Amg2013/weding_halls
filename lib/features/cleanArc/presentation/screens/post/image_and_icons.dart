@@ -7,11 +7,9 @@ import 'icon_card.dart';
 class ImageAndIcons extends StatelessWidget {
   ImageAndIcons({Key? key, required this.height, required this.width})
       : super(key: key);
-
   Size? size;
   final double height;
   final double width;
-
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -38,9 +36,8 @@ class ImageAndIcons extends StatelessWidget {
                   width: width * 0.85,
                   decoration: BoxDecoration(
                       borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(23),
-                        bottomLeft: Radius.circular(23),
-                      ),
+                          topLeft: Radius.circular(23),
+                          bottomLeft: Radius.circular(23)),
                       boxShadow: [
                         BoxShadow(
                             offset: const Offset(0, 1),

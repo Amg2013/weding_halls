@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/post/body.dart';
 import '../screens/post/post_body.dart';
 
 class GridChild extends StatelessWidget {
@@ -21,7 +22,7 @@ class GridChild extends StatelessWidget {
         GestureDetector(
           onTap: () {
             Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const BodyOfPost()));
+                MaterialPageRoute(builder: (context) => const BodyPost()));
           },
           child: Container(
             height: MediaQuery.of(context).size.height * 0.20,

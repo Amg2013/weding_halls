@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructorst';
 import 'package:wedding_halls/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:wedding_halls/features/cleanArc/presentation/screens/login.dart';
+import 'package:wedding_halls/features/cleanArc/presentation/screens/loging/login.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

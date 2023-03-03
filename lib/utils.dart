@@ -7,7 +7,7 @@ import 'features/cleanArc/domain/rebrisotrey/view_posts.dart';
 import 'utils/app_colors.dart';
 import 'features/cleanArc/presentation/screens/post/post_body.dart';
 
-import 'features/cleanArc/presentation/screens/profileScrean.dart';
+import 'features/cleanArc/presentation/screens/profile/profileScrean.dart';
 
 // for picking up image from gallery
 pickImage(ImageSource source) async {

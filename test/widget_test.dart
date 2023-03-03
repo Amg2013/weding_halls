@@ -7,6 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:wedding_halls/app.dart';
 
 import 'package:wedding_halls/main.dart';
 

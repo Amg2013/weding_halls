@@ -1,13 +1,13 @@
 // ignore: file_names
 // ignore_for_file: prefer_const_constructors
-import '../../../../utils/app_colors.dart';
-import 'profileScrean.dart';
-import 'type_post.dart';
-import '../widgets/chip_widget.dart';
-import '../widgets/grid_child.dart';
+import '../../../../../utils/app_colors.dart';
+import '../profile/profileScrean.dart';
+import '../type_post.dart';
+import '../../widgets/chip_widget.dart';
+import '../../widgets/grid_child.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'caleder.dart';
+import '../calender/caleder.dart';
 
 class MAINHOME extends StatefulWidget {
   const MAINHOME({super.key});
