@@ -1,10 +1,8 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-
-import 'package:flutter/foundation.dart';
-
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../data/models/user.dart' as model;
 import 'storage_methods.dart';

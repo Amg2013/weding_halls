@@ -1,15 +1,15 @@
-import 'package:calender_picker/extra/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
-import 'package:wedding_halls/utils/app_colors.dart';
+import 'package:wedding_halls/features/cleanArc/presentation/screens/splash.dart';
 
 import 'features/cleanArc/data/models/userProvider.dart';
 import 'features/cleanArc/presentation/screens/calender/caleder.dart';
+import 'features/cleanArc/presentation/screens/home_controller/home.dart';
 import 'features/cleanArc/presentation/screens/loging/login.dart';
-import 'features/cleanArc/presentation/screens/mainhome/main_homPage.dart';
 import 'features/cleanArc/presentation/screens/profile/profileScrean.dart';
-import 'features/cleanArc/presentation/screens/splash.dart';
+import 'utils/app_colors.dart';
+import 'utils/app_strings.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -51,10 +51,12 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: AppColors.white_1,
         ),
         routes: {
-          'screen1': (context) => const AouthScrean(),
-          'MAINHOME': (context) => const MAINHOME(),
-          'MyCaleder': (context) => const MyCaleder(),
-          'ProfileScreen': (context) => const ProfileScreen(),
+          AppRoutes.loginScreen: (context) => const LoginScreen(),
+          //'ConectUs': (context) => const ConectUs(),
+          AppRoutes.addPostScreen: (context) => const MyCaleder(),
+          AppRoutes.homeScreen: (context) => const HomeViwer(),
+          AppRoutes.calenderScreen: (context) => const MyCaleder(),
+          AppRoutes.profileScreen: (context) => const ProfileScreen(),
         },
         home: const SplashScreen(),
       ),

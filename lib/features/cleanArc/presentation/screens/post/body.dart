@@ -1,10 +1,10 @@
 // ignore_for_file: unnecessary_nullable_for_final_variable_declarations, prefer_const_declarations, unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'title_and_price.dart';
 
 import '../../../../../utils/app_colors.dart';
 import 'image_and_icons.dart';
+import 'title_and_price.dart';
 
 class BodyPost extends StatefulWidget {
   const BodyPost({super.key});

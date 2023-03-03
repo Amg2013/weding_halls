@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:image_picker/image_picker.dart';
-import 'features/cleanArc/domain/rebrisotrey/view_posts.dart';
-import 'utils/app_colors.dart';
-import 'features/cleanArc/presentation/screens/post/post_body.dart';
+import '../features/cleanArc/domain/rebrisotrey/view_posts.dart';
+import 'app_colors.dart';
+import '../features/cleanArc/presentation/screens/post/post_body.dart';
 
-import 'features/cleanArc/presentation/screens/profile/profileScrean.dart';
+import '../features/cleanArc/presentation/screens/profile/profileScrean.dart';
 
 // for picking up image from gallery
 pickImage(ImageSource source) async {

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../screens/post/body.dart';
-import '../screens/post/post_body.dart';
 
 class GridChild extends StatelessWidget {
   const GridChild(

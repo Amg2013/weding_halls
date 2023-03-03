@@ -5,9 +5,9 @@ import 'package:image_picker/image_picker.dart';
 import '../../../domain/rebrisotrey/auth_methods.dart';
 import '../loging/login.dart';
 import '../../../../../utils/app_colors.dart';
-import '../../widgets/text_field_input.dart';
-import '../../../../../utils.dart';
-import '../mainhome/main_homPage.dart';
+import '../loging/widgets/text_field_input.dart';
+import '../../../../../utils/utils.dart';
+import '../home_controller/home.dart';
 
 class SingUp extends StatefulWidget {
   const SingUp({super.key});
@@ -53,7 +53,7 @@ class _SingUpState extends State<SingUp> {
       });
       // navigate to the home screen
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => const MAINHOME()),
+        MaterialPageRoute(builder: (_) => const HomeViwer()),
       );
     } else {
       setState(() {
@@ -160,7 +160,7 @@ class _SingUpState extends State<SingUp> {
                             ))),
                     GestureDetector(
                       onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const AouthScrean(),
+                        builder: (context) => const LoginScreen(),
                       )),
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 8),
