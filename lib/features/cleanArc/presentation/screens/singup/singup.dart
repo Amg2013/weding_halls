@@ -7,7 +7,7 @@ import '../loging/login.dart';
 import '../../../../../utils/app_colors.dart';
 import '../loging/widgets/text_field_input.dart';
 import '../../../../../utils/utils.dart';
-import '../home_controller/home.dart';
+import '../home_viwer/home_viwerdart';
 
 class SingUp extends StatefulWidget {
   const SingUp({super.key});

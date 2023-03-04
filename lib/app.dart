@@ -5,7 +5,7 @@ import 'package:wedding_halls/features/cleanArc/presentation/screens/splash.dart
 
 import 'features/cleanArc/data/models/userProvider.dart';
 import 'features/cleanArc/presentation/screens/calender/caleder.dart';
-import 'features/cleanArc/presentation/screens/home_controller/home.dart';
+import 'features/cleanArc/presentation/screens/home_viwer/home_viwerdart';
 import 'features/cleanArc/presentation/screens/loging/login.dart';
 import 'features/cleanArc/presentation/screens/profile/profileScrean.dart';
 import 'utils/app_colors.dart';

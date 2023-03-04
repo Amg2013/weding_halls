@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:wedding_halls/features/cleanArc/presentation/screens/add_post/add_post.dart';
 import 'package:wedding_halls/features/cleanArc/presentation/screens/contect_us/contct_showModelBott.dart';
 import 'package:wedding_halls/utils/app_strings.dart';
-
+import 'package:Draggable_fab.dart';
 import '../../../../../utils/app_colors.dart';
 import '../calender/caleder.dart';
 import '../home/home.dart';
@@ -30,13 +30,13 @@ class _HomeViwerState extends State<HomeViwer> {
       Icon(Icons.person),
     ];
     return Scaffold(
-        floatingActionButton: FloatingActionButton.extended(
+        floatingActionButton:DraggableFab( child:FloatingActionButton.extended(
           onPressed: () {
             _ShowModel(context);
           },
           icon: const Icon(Icons.whatsapp),
           label: Text(AppStrings.conectUsTxt),
-        ),
+        ) ),
 
         //
         bottomNavigationBar: CurvedNavigationBar(

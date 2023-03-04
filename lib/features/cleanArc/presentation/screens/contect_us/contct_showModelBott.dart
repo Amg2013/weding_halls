@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, deprecated_member_use
 
 import 'dart:io';
 
@@ -81,15 +81,13 @@ reachUsWhatsUp() async {
 
   var androidUrl = "whatsapp://send?phone=$contact&text= Hi, I need some help";
 
-  var iOS_url =
+  var iOSUrl =
       "https://wa.me/$contact?text=${Uri.parse("Hi, I need some help")}";
 
   if (Platform.isIOS) {
-    if (await canLaunch(iOS_url)) {
-      await launch(iOS_url, forceSafariVC: false);
-    } else {
-      print('Whatsapp is not installed');
-    }
+    if (await canLaunch(iOSUrl)) {
+      await launch(iOSUrl, forceSafariVC: false);
+    } else {}
   } else {
     if (await canLaunch(androidUrl)) {
       await launch(androidUrl);

@@ -1,12 +1,13 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+// ignore_for_file: must_be_immutable
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../utils/app_strings.dart';
+
 import '../../../../../../utils/app_colors.dart';
 import '../../add_post/add_post.dart';
 import '../../calender/caleder.dart';
 import '../../profile/profileScrean.dart';
-import '../home.dart';
+import '../home_viwerdart';
 
 class CurvedNavBar extends StatefulWidget {
   List<Widget> screens = const [
