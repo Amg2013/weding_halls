@@ -1,7 +1,6 @@
 // ignore_for_file: sort_child_properties_last
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:wedding_halls/features/main_features/domain/resources/auth_methods.dart';
 import 'package:wedding_halls/features/authantcaion/presentaion/loging/widgets/text_field_input.dart';
 import 'package:wedding_halls/utils/app_strings.dart';

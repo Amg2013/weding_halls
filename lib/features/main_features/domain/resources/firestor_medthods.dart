@@ -1,8 +1,10 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
-import 'package:wedding_halls/features/posts_opertions/data/post.dart';
-import 'package:wedding_halls/features/main_features/domain/resources/storage_methods.dart';
+import '../../../posts_opertions/data/post.dart';
+import 'storage_methods.dart';
 
 class FireStoreMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;

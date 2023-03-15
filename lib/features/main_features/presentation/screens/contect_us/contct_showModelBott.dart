@@ -17,9 +17,9 @@ class ConectUsWidget extends StatelessWidget {
     return Container(
         height: 350,
         decoration: BoxDecoration(
-          color: AppColors.white_1,
-          borderRadius: const BorderRadiusDirectional.only(
-              topStart: Radius.circular(80), topEnd: Radius.circular(10)),
+          color: AppColors.yellwo,
+          // borderRadius: const BorderRadiusDirectional.only(
+          //     topStart: Radius.circular(80), topEnd: Radius.circular(10)),
         ),
         child: Padding(
             padding: const EdgeInsets.all(20),
@@ -58,7 +58,9 @@ class ConectUsWidget extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: reachUsWhatsUp,
+                    onTap: () async {
+                      launchUrl(phonNumber);
+                    },
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
@@ -86,13 +88,17 @@ reachUsWhatsUp() async {
 
   if (Platform.isIOS) {
     if (await canLaunch(iOSUrl)) {
-      await launch(iOSUrl, forceSafariVC: false);
+      await launchUrl(
+        iOSUrl as Uri,
+      );
     } else {}
   } else {
     if (await canLaunch(androidUrl)) {
-      await launch(androidUrl);
+      await launchUrl(androidUrl as Uri);
     } else {
       debugPrint('Whatsapp is not installed');
     }
   }
 }
+
+final Uri phonNumber = Uri.parse('tel:+20-127-653-3213');

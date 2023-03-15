@@ -71,40 +71,6 @@ class _BodyPostState extends State<BodyPost> {
             price: int.parse(price),
           ),
           // tow buttoms
-          Row(
-            children: <Widget>[
-              SizedBox(
-                  width: width / 2,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.cyan,
-                      borderRadius: const BorderRadius.only(
-                        topRight: Radius.circular(20),
-                      ),
-                    ),
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "احجز الان",
-                        style: TextStyle(
-                          color: white_1,
-                          fontSize: 25,
-                        ),
-                      ),
-                    ),
-                  )),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  "معلومات اكتر",
-                  style: TextStyle(
-                    color: darkBlue,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ],
-          ),
         ],
       ),
     );

@@ -40,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
                   user.photoUrl,
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
                 user.username,
                 style: const TextStyle(

@@ -1,8 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:wedding_halls/utils/app_colors.dart';
+import '../../utils/app_colors.dart';
 
 import '../posts_opertions/presention/screens/add_post.dart';
 import '../caleder/presentaion/screens/caleder.dart';

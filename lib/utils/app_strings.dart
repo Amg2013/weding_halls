@@ -19,9 +19,8 @@ class AppStrings {
   static const String smallHall = " قاعة صغيرة";
   static const String bigHall = " قاعة كبيرة";
   static const String openHall = "قاعة مفتوحة";
-  static const String closHall = " ثاعة مغلقة";
-  // static const String priceOfpost = "سعر الحجز";
-
+  static const String closHall = " قاعة مغلقة";
+  static const String postName = " اسم القاعة ";
 }
 
 class AppRoutes {

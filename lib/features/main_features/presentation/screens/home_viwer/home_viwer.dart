@@ -1,7 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:wedding_halls/features/main_features/domain/providers/userProvider.dart';
+import '../../../domain/providers/userProvider.dart';
 // ignore: file_names
 // ignore_for_file: prefer_const_constructors
 import 'package:wedding_halls/features/posts_opertions/presention/screens/add_post.dart';
@@ -33,8 +33,8 @@ class _HomeViwerState extends State<HomeViwer> {
   }
 
   addData() async {
-    UserProvider _userProvider = Provider.of(context, listen: false);
-    await _userProvider.refreshUser();
+    UserProvider userProvider = Provider.of(context, listen: false);
+    await userProvider.refreshUser();
   }
 
   @override
@@ -49,7 +49,7 @@ class _HomeViwerState extends State<HomeViwer> {
         floatingActionButton: DraggableFab(
             child: FloatingActionButton.extended(
           onPressed: () {
-            _ShowModel(context);
+            _showModel(context);
           },
           icon: const Icon(Icons.whatsapp),
           label: Text(AppStrings.conectUsTxt),
@@ -71,12 +71,11 @@ class _HomeViwerState extends State<HomeViwer> {
         body: screens[index]);
   }
 
-  Future<dynamic> _ShowModel(BuildContext context) {
+  Future<dynamic> _showModel(BuildContext context) {
     return showModalBottomSheet(
-      backgroundColor: AppColors.darkBlue,
+      backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(80), top: Radius.circular(10))),
+          borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
       enableDrag: true,
       context: context,
       builder: (context) => const ConectUsWidget(),

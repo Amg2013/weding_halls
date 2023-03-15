@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_halls/features/posts_opertions/presention/screens/view_post_screens/type_post.dart';
+import '../../../../../posts_opertions/presention/screens/view_post_screens/list_view_of_posts.dart';
 
 class ChipWidget extends StatelessWidget {
   const ChipWidget({Key? key, required this.label, this.horizontalPadding = 0})

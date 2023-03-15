@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_halls/features/main_features/presentation/screens/home/widgets/feateures_vertcal_list.dart';
+import 'widgets/feateures_vertcal_list.dart';
 
 import 'widgets/chip_widget.dart';
 import 'widgets/grid_child.dart';
