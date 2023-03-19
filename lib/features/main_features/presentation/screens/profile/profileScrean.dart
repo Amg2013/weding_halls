@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:wedding_halls/features/authantcaion/data/user.dart';
 import 'package:wedding_halls/features/main_features/domain/providers/userProvider.dart';
@@ -35,20 +36,21 @@ class ProfileScreen extends StatelessWidget {
           Column(
             children: [
               CircleAvatar(
-                radius: 50,
+                radius: 40.r,
                 backgroundImage: NetworkImage(
-                  user.photoUrl,
+                  user.photoUrl ??
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZ14Xr1vd3glyG_Pho-C66BjE-ilPZuuh9CSf-W3b&s',
                 ),
               ),
               const SizedBox(height: 10),
               Text(
-                user.username,
+                user.username ?? 'hjkjl',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text(user.bio)
+              Text(user.bio ?? ' sadf')
             ],
           ),
           const SizedBox(height: 25),
@@ -67,7 +69,7 @@ class ProfileScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 10),
-          // continer decortion
+
           Row(
               children: List.generate(
             6,

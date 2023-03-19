@@ -1,13 +1,13 @@
-// ignore_for_file: unused_field, unused_local_variable
+// ignore_for_file: unused_field, unused_local_variable, non_constant_identifier_names
 
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/app_colors.dart';
-import '../../../../utils/app_strings.dart';
-import '../../../main_features/domain/providers/userProvider.dart';
+import '../../../../../utils/app_colors.dart';
+import '../../../../../utils/app_strings.dart';
+import '../../../../main_features/domain/providers/userProvider.dart';
 
 class AddPost extends StatefulWidget {
   const AddPost({Key? key}) : super(key: key);
@@ -112,15 +112,20 @@ class _AddPostState extends State<AddPost> {
                         alignment: Alignment.topRight,
                         child: Container(
                             decoration: BoxDecoration(
-                                color: AppColors.blue,
-                                borderRadius: const BorderRadius.all(
-                                    Radius.circular(10))),
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                  color: Colors.grey,
+                                  width: 1,
+                                  style: BorderStyle.solid),
+                              //color: const Color(0xFFF8E2E2),
+                            ),
+
+                            //   borderRadius: BorderRadius.circular(10))),
                             margin: const EdgeInsets.only(left: 15),
                             height: 250.h,
                             width: 200.w,
                             child: GestureDetector(
-                                onTap: () =>
-                                    Navigator.pushNamed(context, 'FeedPost'),
+                                onTap: () => null,
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [

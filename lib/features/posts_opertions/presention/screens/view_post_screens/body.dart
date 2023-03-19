@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../utils/app_colors.dart';
-import '../../widgets/view_post/image_and_icons.dart';
-import '../../widgets/view_post/title_and_price.dart';
+import 'view_post_v1/image_and_icons.dart';
+import 'view_post_v1/title_and_price.dart';
 
 class BodyPost extends StatefulWidget {
   const BodyPost({super.key});

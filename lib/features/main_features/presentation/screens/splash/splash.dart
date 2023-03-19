@@ -7,6 +7,8 @@ import 'package:wedding_halls/features/authantcaion/presentaion/loging/login.dar
 import 'package:wedding_halls/utils/app_colors.dart';
 import 'package:wedding_halls/utils/assets_valeus.dart';
 
+import '../../../../../utils/app_strings.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -19,46 +21,32 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [
-      Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(AssetsValues.imgSpalsh), fit: BoxFit.cover)),
-        height: double.infinity,
-        padding: EdgeInsets.only(top: 700.h, left: 30.w, right: 30.w),
-        child: SwipeableButtonView(
-          onFinish: onFinish,
-          isFinished: isfinshed,
-          onWaitingProcess: onWaitingProcess,
-          activeColor: AppColors.blue,
-          buttonWidget:
-              Icon(Icons.double_arrow_outlined, color: AppColors.cyan),
-          buttonText: 'text deflut',
-
-          // style: TextStyle(fontSize: 10.sp),
+    return Scaffold(
+      body: Stack(children: [
+        SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Image.asset(AssetsValues.imgSpalsh),
         ),
-      ),
-      Padding(
-        padding: EdgeInsets.only(
-            top: MediaQuery.of(context).size.height * .84,
-            left: MediaQuery.of(context).size.width * 05,
-            right: MediaQuery.of(context).size.width * .05),
-        child: SizedBox(
-          height: 60.h,
+        Padding(
+          padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * .84,
+              left: MediaQuery.of(context).size.width * .05,
+              right: MediaQuery.of(context).size.width * .05),
           child: SwipeableButtonView(
-            onFinish: onFinish,
-            isFinished: isfinshed,
-            onWaitingProcess: onWaitingProcess,
-            activeColor: AppColors.blue,
-            buttonWidget:
-                Icon(Icons.double_arrow_outlined, color: AppColors.cyan),
-            buttonText: 'text deflut',
-
-            // style: TextStyle(fontSize: 10.sp),
-          ),
+              onFinish: onFinish,
+              // indicatorColor:
+              //     const AlwaysStoppedAnimation<Color>(Colors.white),
+              isFinished: isfinshed,
+              buttontextstyle: TextStyle(fontSize: 20.sp),
+              onWaitingProcess: onWaitingProcess,
+              activeColor: AppColors.yellwo,
+              buttonWidget: Icon(Icons.double_arrow_outlined,
+                  size: 25.r, color: AppColors.cyan),
+              buttonText: AppStrings.splashTxt),
         ),
-      ),
-    ]);
+      ]),
+    );
   }
 
   void onFinish() async {

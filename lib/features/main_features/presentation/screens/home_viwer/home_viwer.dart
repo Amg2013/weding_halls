@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../../../domain/providers/userProvider.dart';
 // ignore: file_names
 // ignore_for_file: prefer_const_constructors
-import 'package:wedding_halls/features/posts_opertions/presention/screens/add_post.dart';
+import 'package:wedding_halls/features/posts_opertions/presention/screens/add-post/add_post.dart';
 import 'package:wedding_halls/features/main_features/presentation/screens/contect_us/contct_showModelBott.dart';
 import 'package:wedding_halls/utils/app_strings.dart';
 
@@ -62,7 +62,7 @@ class _HomeViwerState extends State<HomeViwer> {
           onTap: (index) => setState(() => this.index = index),
           animationCurve: Curves.easeInOut,
           animationDuration: const Duration(microseconds: 580),
-          color: AppColors.darkBlue,
+          color: AppColors.blue,
           backgroundColor: AppColors.white_1,
         ),
         extendBody: true,
@@ -75,7 +75,7 @@ class _HomeViwerState extends State<HomeViwer> {
     return showModalBottomSheet(
       backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
+          borderRadius: BorderRadius.vertical(top: Radius.circular(40))),
       enableDrag: true,
       context: context,
       builder: (context) => const ConectUsWidget(),

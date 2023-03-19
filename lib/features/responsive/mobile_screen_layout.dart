@@ -2,7 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import '../../utils/app_colors.dart';
 
-import '../posts_opertions/presention/screens/add_post.dart';
+import '../posts_opertions/presention/screens/add-post/add_post.dart';
 import '../caleder/presentaion/screens/caleder.dart';
 import '../main_features/presentation/screens/home/home.dart';
 import '../main_features/presentation/screens/profile/profileScrean.dart';
@@ -48,9 +48,10 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
     return Scaffold(
       body: PageView(
         // physics: ,
-        children: screens,
         controller: pageController,
         onPageChanged: onPageChanged,
+        // physics: ,
+        children: screens,
       ),
       bottomNavigationBar: CurvedNavigationBar(
           animationDuration: const Duration(microseconds: 580),

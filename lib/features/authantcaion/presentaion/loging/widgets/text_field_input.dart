@@ -25,6 +25,7 @@ class TextFieldInput extends StatelessWidget {
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
       child: TextField(
         controller: textEditingController,
+        textDirection: TextDirection.rtl,
         style: const TextStyle(),
         decoration: InputDecoration(
           hintText: hintText,

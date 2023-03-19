@@ -23,7 +23,7 @@ class GridChild extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const ViwerOfposts()));
           },
           child: Container(
-            height: MediaQuery.of(context).size.height * 0.20,
+            height: MediaQuery.of(context).size.height * 0.19,
             width: MediaQuery.of(context).size.width / 2,
             decoration: BoxDecoration(
                 image: DecorationImage(

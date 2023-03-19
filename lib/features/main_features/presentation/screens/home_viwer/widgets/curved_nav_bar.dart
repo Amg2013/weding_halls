@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../utils/app_colors.dart';
 import '../../../../../caleder/presentaion/screens/caleder.dart';
-import '../../../../../posts_opertions/presention/screens/add_post.dart';
+import '../../../../../posts_opertions/presention/screens/add-post/add_post.dart';
 import '../../profile/profileScrean.dart';
 import '../home_viwer.dart';
 

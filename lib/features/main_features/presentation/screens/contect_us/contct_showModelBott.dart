@@ -1,9 +1,7 @@
 // ignore_for_file: file_names, deprecated_member_use
 
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:wedding_halls/features/main_features/presentation/screens/contect_us/connect_methods.dart';
 import 'package:wedding_halls/utils/app_colors.dart';
 import 'package:wedding_halls/utils/app_strings.dart';
 
@@ -16,10 +14,8 @@ class ConectUsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 350,
-        decoration: BoxDecoration(
-          color: AppColors.yellwo,
-          // borderRadius: const BorderRadiusDirectional.only(
-          //     topStart: Radius.circular(80), topEnd: Radius.circular(10)),
+        decoration: const BoxDecoration(
+          color: Colors.white,
         ),
         child: Padding(
             padding: const EdgeInsets.all(20),
@@ -28,22 +24,25 @@ class ConectUsWidget extends StatelessWidget {
                 textDirection: TextDirection.ltr,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                      height: 50,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(90),
-                          color: AppColors.blue),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            const Icon(Icons.call_outlined),
-                            Text(
-                              ' +20 010-9527-6311     رقم خدمة العملاء ',
-                              style: TextStyle(color: AppColors.darkBlue),
-                            ),
-                          ])),
                   GestureDetector(
-                    onTap: reachUsWhatsUp,
+                    onTap: () => Connect.connectWhatsUpAlaa(),
+                    child: Container(
+                        height: 50,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(90),
+                            color: AppColors.blue),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              const Icon(Icons.call_outlined),
+                              Text(
+                                '   خدمة العملاء ',
+                                style: TextStyle(color: AppColors.darkBlue),
+                              ),
+                            ])),
+                  ),
+                  GestureDetector(
+                    onTap: () => Connect.connectWhatsUpAlaa(),
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
@@ -58,9 +57,8 @@ class ConectUsWidget extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () async {
-                      launchUrl(phonNumber);
-                    },
+                    onTap: () => Connect.lunchCustomUrl(
+                        'https://www.linkedin.com/in/amgad-nadey-2734501a5/'),
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
@@ -77,28 +75,3 @@ class ConectUsWidget extends StatelessWidget {
                 ])));
   }
 }
-
-reachUsWhatsUp() async {
-  var contact = "+201276533213";
-
-  var androidUrl = "whatsapp://send?phone=$contact&text= Hi, I need some help";
-
-  var iOSUrl =
-      "https://wa.me/$contact?text=${Uri.parse("Hi, I need some help")}";
-
-  if (Platform.isIOS) {
-    if (await canLaunch(iOSUrl)) {
-      await launchUrl(
-        iOSUrl as Uri,
-      );
-    } else {}
-  } else {
-    if (await canLaunch(androidUrl)) {
-      await launchUrl(androidUrl as Uri);
-    } else {
-      debugPrint('Whatsapp is not installed');
-    }
-  }
-}
-
-final Uri phonNumber = Uri.parse('tel:+20-127-653-3213');

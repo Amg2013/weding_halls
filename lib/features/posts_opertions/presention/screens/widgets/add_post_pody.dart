@@ -3,7 +3,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../main_features/domain/providers/userProvider.dart';
+import '../../../../main_features/domain/providers/userProvider.dart';
 
 class BodyOfAddPostSctreen extends StatelessWidget {
   const BodyOfAddPostSctreen({
